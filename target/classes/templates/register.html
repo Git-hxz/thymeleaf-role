@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head><title>register</title></head>
+<body>
+    <div>
+        <form action="#" th:action="@{/doRegister}" method="post">
+            <div><h2>New user registration</h2></div>
+            <div>
+                <table style="width:300px">
+                    <tr><td>Name</td><td><input type="text" name="name"/></td></tr>
+                    <tr><td>Password</td><td><input type="password" name="password"/></td></tr>
+                    <tr><td>Email</td><td><input type="email" name="email"/></td></tr>
+                </table>
+            </div>
+            <td><button type="submit">Register</button></td>
+        </form>
+    </div><br />
+
+    <div><a href="/login">Back...</a></div>
+
+</body>
+</html>
